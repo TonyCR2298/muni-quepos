@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de la sección Ambiente de Quepos">
+    <meta name="keywords" content="trámites, información, comunidad, municipalidad, seguridad, impuestos, recivos">
+    <meta name="auror" content="Anthony arce solis">
+    <meta name="owner" content="Municipalidad de Quepos">
+
+    <meta property="og:title" content="Ambiente | Costa Rica">
+    <meta property="og:description" content="Página de la sección Ambiente de Quepos">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="../multimedia/icon/favicon-muni.svg" type="image/x-icon">
+    
+    <title>Ambiente | Costa Rica</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos-muni.css">
+
+    <!-- icinos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+</head>
+
+<body class="loaded" data-bs-theme="light">
+
+    <!-- *********************************** -->
+    <!-- Aqui va el menu-->
+    <!-- *********************************** -->
+
+    <nav  class="navbar navbar-expand-lg sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" style="width: 200px" href="../index.html"><img src="../multimedia/icon/logo-pagina-muni.svg" alt="Logo  de municipalidad"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gobierno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/alcaldia.html">Alcaldía</a></li>
+                            <li><a class="dropdown-item" href="../html/consejo-municipal.html">Consejo Municipal</a></li>
+                            <li><a class="dropdown-item" href="../html/participacion-ciudadana.html">Participación ciudadana</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ciudad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/canton.html">Cantón</a></li>
+                            <li><a class="dropdown-item" href="../html/emprendedores.html">Emprendedores</a></li>
+                            <li><a class="dropdown-item" href="../html/comision-de-emergencias.html">Comisión de emergencias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/ambiente.html">Ambiente</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Trámites
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/solicitud-de-visado.html">Solicitud de visado</a></li>
+                            <li><a class="dropdown-item" href="../html/apc-pagos-en-linea.html">APC y Pagos en línea</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex padding" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn me-2 px-2" type="submit"><i class="bi bi-search "></i></button>
+                    
+                </form>
+
+                <div class="d-flex align-items-center padding">
+                    <!-- <button type="button" class="btn botonesVerdes me-2">
+                        <i class="bi bi-whatsapp text-white"></i>
+                    </button> -->
+                    <a href="../html/contacto.html" class="btn botonesRojos me-2 text-white">
+                        Contactar
+                    </a>
+                    <a onclick="temaOscuro()" class="btn" role="button"><i id="dl-icon" class="bi bi-moon-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *********************************** -->
+    <!-- Aqui Termina el menu-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <hr>
+    
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ambiente</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui cmomienza la seccion de titulo de pagina canton->
+    <!-- *********************************** -->
+
+    <section class="fondosAmbiente">
+        <div class="container py-5">
+
+            <div class="row come-in">
+                <div class="col-12 col-lg-6 offset-lg-3 text-center">
+                    <h1 class="titulosBlancos">Ambiente</h1>
+                </div>
+            </div>
+
+            <div class="p-3 pt-0">
+                <div class="row come-in d-flex align-items-center">
+                        <div class="col-md-6 offset-md-3 col-lg-6 ml-lg-0 text-center">
+
+                            <a  href="../html/galeria.html"
+                                class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                                role="button"
+                            ><i class="bi bi-camera-fill"></i> Galería</a>
+
+                            <a  href="../html/ayuda-social.html"
+                                class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                                role="button"
+                                ><i class="bi bi-info-square-fill"></i> Ayuda social</a>
+
+                            <a  href="../html/documentos.html"
+                                class="btn botonUniversalDos  btn-floating m-1 textoDeBotones"
+                                role="button"
+                                ><i class="bi bi-archive-fill"></i> Documentos</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de titulo de pagina canton-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion canton de quepos-->
+    <!-- *********************************** -->
+
+    <main class="margingTopUniversal" id="desarrolloAmbiental">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-12 m-auto">
+                    <h2 class="tituloAcercade">Desarrollo Ambiental</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                            <h3 class="colorSubtitulos">Comprometidos por un mundo mejor</h3>
+                            <p class="card-text">
+                                Con la finalidad de cumplir con lo establecido en el reglamento a la  Ley de Gestión Integral de Residuos (8839), así como a lo indicado en el informe DFOE-AE-IF-003-2013 de la Contraloría General de la República y en los Decretos Ejecutivos 36499-S-MINAET, además de mantener el compromiso ambiental de la Municipalidad de Quepos.
+                            </p>
+
+                            <p class="card-text"> 
+                                Este plan es un instrumento de planificación que le permite al municipio, ejecutar acciones enfocadas a cumplir con la normativa nacional referente al tema del ahorro y el uso eficiente de energía, cambio climático y gestión ambiental institucional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6">
+                    <div class="border-0 card bg-transparent">
+                        <img src="../multimedia/img/foto-seccion-ambiente.png" alt="Foto de Oso perezos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion canton de quepos-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de progrmas ambientales-->
+    <!-- *********************************** -->
+
+    <section class="container margingTopUniversal" id="programasAmbientales">
+
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 m-auto">
+                <h2 class="tituloAcercade">Programas ambientales</h2>
+            </div>
+        </div>
+
+            <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio margingTopUniversal">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Todos</li>
+                        <li data-filter=".filter-cementerio">Educación Ambiental</li>
+                        <li data-filter=".filter-mercado">Bandera Azul</li>
+                        <li data-filter=".filter-aseoyvias">Gestión de residuos</li>
+                        <li data-filter=".filter-recoleccion">Reciclaje</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row portfolio-container justify-content-center">
+    
+                <div class="col-xl-10">
+                    <div class="row">
+    
+            <!--inicio de card de bandera azul -->
+    
+                        <div class="col-12 portfolio-item filter-mercado">
+    
+                            <div class="card p-2 border-primary">
+                                <div class="card-body ">
+                                    <strong class="text-primary d-inline-block mb-2">
+                                        Bandera Azul
+                                    </strong>
+                                    <h3 class="mt-4">BANDERA AZUL ECOLÓGICA CATEGORÍA MUNICIPALIDADES.</h3>
+                                    <p>En el año 2016 la Municipalidad de Quepos se inscribió en el programa Bandera Azul Ecológica, específicamente en la categoría de Municipalidades con el fin de suscitar un compromiso ambiental del gobierno local.</p>
+                                    <p>Lo que se busca es movilizar a toda la municipalidad hacia la implementación de una gestión ambiental integral que brinde herramientas para medir el desempeño en este rubro.</p>
+                    
+                                    <h4>Objetivo general</h4>
+                                    <p>Reconocer los esfuerzos municipales en materia ambiental, mediante la promoción a través del liderazgo de los gobiernos locales el desarrollo, y la creación de un enfoque colectivo para el fortalecimiento de capacidades en los diferentes actores a nivel municipal.</p>
+                    
+                                    <h4 class="mt-5">Objetivos específicos</h4>
+                                    <ul class="mt-5 fs-5">
+                                        <li>1) Cumplimiento legal: Cumplimiento de las diferentes legislaciones sociales y ambientales vinculantes.</li>
+                                        <li>2) Combustibles fósiles: Medir y reducir el consumo de combustibles fósiles.</li>
+                                        <li>3) Recurso hídrico: Gestionar el recurso hídrico tanto a lo interno como a lo externo de la municipalidad.</li>
+                                        <li>4) Tratamiento de las aguas residuales: Impulsar el cumplimiento de ley, la reutilización o tratamiento de las aguas servidas.</li>
+                                        <li>5) Energía eléctrica: Medir, reducir y controlar el consumo de energía eléctrica.</li>
+                                        <li>6) Gestión de residuos: Fomentar la medición, reducción, reutilización, reciclaje y disposición adecuada de los residuos sólidos.</li>
+                                        <li>7) Contaminantes atmosféricos: Medir, reducir y controlar el uso de contaminantes atmosféricos.</li>
+                                    </ul>
+                    
+                                    <p class="fst-italic">El pasado 15 de febrero de 2017 se presentó el informe final de las acciones generadas por la Municipalidad de Quepos, específicamente en su edificio central con el fin de optar por primera vez con este galardón.</p>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+    
+            <!--fin de card del servicio de bandera azul -->
+
+            <!--inicio de card del servicio de Educación Ambiental -->
+    
+            <div class="col-12 portfolio-item filter-cementerio">
+    
+                <div class="card p-2 border-warning">
+            <div class="card-body ">
+                <div class="card-body ">
+                    <strong class="text-warning d-inline-block mb-2">
+                        Educación Ambiental
+                    </strong>
+                    <p>La UTA mantiene una constante y continua capacitación en temas ambientales, los cuales se imparten en escuelas, colegios, iglesias y cualquier otra institución o persona que así lo solicite.</p>
+                    <p>Estas capacitaciones se dan directamente a través de los funcionarios de la UTA o por medio de la empresa Tecnoambiente, contratada para tal fin por la municipalidad.</p>
+                    <p>Los temas a tratar abarcan temas tales como: Reciclaje, Contaminación de Mares, Manejo de Residuos Sólidos, Uso eficiente de la energía, Cambio Climático y Calentamiento Global.</p>
+                    <p>También se brindan talleres sobre Agricultura Hidropónica, Agricultura orgánica y aprovechamiento de materiales valorizables (reciclaje).</p>
+                </div>
+            </div>
+                </div>
+
+            </div>       
+
+            <!--fin de card del servicio de Educación Ambiental -->
+
+            <!--inicio de card de Gestión de residuos -->
+
+            <div class="col-12 portfolio-item filter-aseoyvias">
+    
+                <div class="card p-2 border-success">
+                    <div class="card-body ">
+                        <strong class="text-success d-inline-block mb-2">
+                            Gestión de residuos
+                        </strong>
+                        <h3 class="mt-4">DENUNCIAS Y QUEJAS</h3>
+
+                        <p>La UTA tramita ante los departamentos municipales que corresponda, así como ante las instituciones públicas requeridas denuncias y quejas sobre:</p>
+
+                        <ul>
+                            <li>● Mal manejo de Residuos Sólidos</li>
+                            <li>● Contaminación ambiental</li>
+                            <li>● Afectación a los recursos naturales</li>
+                            <li>● Servicios ambientales municipales</li>
+                        </ul>
+
+                        <p><strong>Para ello puede comunicarse al teléfono 2777-7744 o al correo electrónico wumana@muniquepos.go.cr</strong></p>
+
+                        <h3 class="mt-4">INFORMACIÓN</h3>
+
+                        <p>Toda información que requiera sobre temas como:</p>
+
+                        <ul>
+                            <li>● Trámites para certificación de recolección de residuos sólidos.</li>
+                            <li>● Horarios y rutas de recolección de residuos sólidos ordinarios</li>
+                            <li>● Horarios y rutas de recolección de residuos valorizables (reciclaje)</li>
+                            <li>● Horarios y rutas de recolección de residuos sólidos No Tradicionales</li>
+                            <li>● Talleres, capacitación y charlas en temas ambientales</li>
+                            <li>● Trámites de denuncias y quejas de carácter ambiental</li>
+                        </ul>
+
+                        <p><strong>Comunicarse al teléfono 2777-7744 o al correo electrónico wumana@muniquepos.go.cr</strong></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--fin de card de Gestión de residuos-->
+
+            <!--inicio de card de Reciclaje -->
+            <div class="col-12 portfolio-item filter-recoleccion">
+
+                <div class="card p-2 border-danger">
+                    <div class="card-body ">
+                        <strong class="text-danger d-inline-block mb-2">
+                            Reciclaje
+                        </strong>
+                        <h2 class="mt-4">Servicio de recolección de residuos valorizables (reciclaje)</h2>
+
+                        <p class="mt-4">En este aspecto la Municipalidad de Quepos figura a nivel regional y nacional como una de las pioneras. Con un programa de recolección de residuos valorizables que dio sus primero pasos en el año 1999 y que tomo una consolidación mayor a partir del año 2005 con el programa “Recuperar para Reciclar”.</p>
+
+                        <p>A partir del año 2011 este programa tiene un mayor impacto al poder llegar más eficientemente a diversos hogares y negocios.<br>
+                        “Recuperar para Reciclar” se estructura por medio de una serie de rutas y horarios de la siguiente manera:</p>
+
+                        <h3 class="mt-4">Materiales que se recolectan</h3>
+
+                        <ul>
+                            <li>● Papel y Cartón</li>
+                            <li>● Polilaminados (Tetrapack®)</li>
+                            <li>● Aluminio (latas)</li>
+                            <li>● Plástico (botellas y envases de PET y HDPE)</li>
+                            <li>● Vidrio (botellas no quebradas)</li>
+                            <li>● Hojalata (latas de atún, conservas y similares)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--fin de card de Reciclaje -->
+
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section><!-- End Portfolio Section -->
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de progrmas ambientales-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+    <section class="productos bg-light padingUniversal margingTopUniversalDos" id="mas-comprado">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-2 mb-2 offset-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/cruz-roja.svg" class="img-fluid" style="height: 50px;" alt="Logo cruz roja">
+
+                            <p class="card-title">Cruz Roja Quepos</p>
+                            <p class="card-subtitle"><a href="" class="textoNumeros">2582-9090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia.svg" class="img-fluid" style="height: 50px;" alt="Logo fuerza pública">
+
+                            <p class="card-title">Fuerza Pública</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-6020</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/bomberos.svg" class="img-fluid" style="height: 50px;" alt="Logo bomberos">
+
+                            <p class="card-title">Bomberos Quepos</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-4090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia-muni.svg" class="img-fluid" style="height: 50px;" alt="Logo policía">
+
+                            <p class="card-title">Policía Municipal</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-3030</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza el footer-->
+    <!-- *********************************** -->
+
+    <footer
+    class="text-center text-lg-start text-white margingTopUniversal"
+    style="background-color: #f2a86b"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+    <!--Grid row-->
+    <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+            Municipalidad de Quepos
+        </h6>
+        <p>
+            En la Municipalidad de Quepos nos cmoprometemos a proporcionar servicios públicos de calidad, promover el desarrollo sostenible y mejorar la calidad de vida de nuestra comunidad local a través de la colaboración y el compromiso con nuestros ciudadanos y partes interesadas
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Municipalidad</h6>
+        <p>
+            <a class="text-white" href="../index.html">Inicio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/alcaldia.html">Alcaldía</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/canton.html">Cantón</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/servicios.html">Servicios</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/ambiente.html">Ambiente</a>
+        </p>
+        <p>
+            <a class="text-white" href="../solicitud-de-visado.html">Solicitud de visado</a>
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+        Links útiles
+        </h6>
+        <p>
+            <a class="text-white" href="../html/documentos.html">Documentos</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/noticias.html">Noticias</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/galeria.html">Galería</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/mapa-de-sitio.html">Mapa de sitio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/politicas-de-uso.html">Políticas de uso</a>
+        </p>
+
+        <p>
+            <a class="text-white" href="../html/telefonos-de-interes.html">Teléfonos de interés</a>
+        </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+        <p><i class="fas fa-home mr-3"></i> Pumtarenas, Costa Rica</p>
+        <p><i class="fas fa-envelope mr-3"></i> munidequeposinfo@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> 87565849</p>
+    </div>
+    <!-- Grid column -->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-5 text-center text-md-start">
+        <!-- Copyright -->
+        <div class="p-3">
+        © 2023 Copyright:
+        <a class="text-white" href="#"
+            >Muni de Queposs</a
+            >
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <div class="col-md-3 col-lg-3">
+        <!-- logo -->
+        <div class="p-3">
+            <a style="width: 100px" href="../index.html"><img src="../multimedia/icon/logo-blanco-muni-01.svg" alt="Logo m"></a>
+        </div>
+        <!-- logo -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Twitter -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Instagram -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+    <!-- Grid column -->
+    </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina el footer-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- todo AQUI EL BOTON DE SCROLLTOP-->
+    <!-- *********************************** -->
+
+    <a href="#" class="totop">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <!-- ====================AQUI VA ES JS========================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="../js/isotope.pkgd.min.js"></script>
+
+    <script src="../js/muni.js"></script>
+
+</body>
+
+</html>

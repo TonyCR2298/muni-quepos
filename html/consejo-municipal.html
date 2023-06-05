@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de la seccion consejo municipal de Quepos">
+    <meta name="keywords" content="tramites, informacion, comunidad, municipalidad, seguridad, impuestos, recivos">
+    <meta name="auror" content="Anthony arce solis">
+    <meta name="owner" content="Municipalidad de Quepos">
+
+    <meta property="og:title" content="Consejo Municipal | Costa Rica">
+    <meta property="og:description" content="Página de la seccion consejo municipal de Quepos">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="../multimedia/icon/favicon-muni.svg" type="image/x-icon">
+    
+    <title>Consejo Municipal | Costa Rica</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos-muni.css">
+
+    <!-- icinos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+</head>
+
+<body class="loaded" data-bs-theme="light">
+
+    <!-- *********************************** -->
+    <!-- Aqui va el menu-->
+    <!-- *********************************** -->
+
+    
+    <nav  class="navbar navbar-expand-lg sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" style="width: 200px" href="../index.html"><img src="../multimedia/icon/logo-pagina-muni.svg" alt="Logo muni"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gobierno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/alcaldia.html">Alcaldía</a></li>
+                            <li><a class="dropdown-item" href="../html/consejo-municipal.html">Consejo Municipal</a></li>
+                            <li><a class="dropdown-item" href="../html/participacion-ciudadana.html">Participación ciudadana</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ciudad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/canton.html">Cantón</a></li>
+                            <li><a class="dropdown-item" href="../html/emprendedores.html">Emprendedores</a></li>
+                            <li><a class="dropdown-item" href="../html/comision-de-emergencias.html">Comisión de emergencias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/ambiente.html">Ambiente</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Trámites
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/solicitud-de-visado.html">Solicitud de visado</a></li>
+                            <li><a class="dropdown-item" href="../html/apc-pagos-en-linea.html">APC y Pagos en línea</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex padding" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn me-2 px-2" type="submit"><i class="bi bi-search "></i></button>
+                    
+                </form>
+
+                <div class="d-flex align-items-center padding">
+                    <!-- <button type="button" class="btn botonesVerdes me-2">
+                        <i class="bi bi-whatsapp text-white"></i>
+                    </button> -->
+                    <a href="../html/contacto.html" class="btn botonesRojos me-2 text-white">
+                        Contactar
+                    </a>
+                    <a onclick="temaOscuro()" class="btn" role="button"><i id="dl-icon" class="bi bi-moon-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *********************************** -->
+    <!-- Aqui Termina el menu-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <hr>
+    
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Consejo Municipal</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui cmomienza la seccion de titulo de pagina alcaldia-->
+    <!-- *********************************** -->
+
+    <section class="fondosTituloPag">
+        <div class="container py-5">
+
+            <div class="row come-in">
+                <div class="col-12 col-lg-6 offset-lg-3 text-center">
+                    <h1 class="tituloAlcaldia">Consejo Municipal</h1>
+                </div>
+            </div>
+
+            <div class="p-3 pt-0">
+                <div class="row come-in d-flex align-items-center">
+                        <div class="col-md-6 offset-md-3 col-lg-6 ml-lg-0 text-center">
+
+                            <a  href="../html/galeria.html"
+                                class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                                role="button"
+                            ><i class="bi bi-camera-fill"></i> Galería</a>
+
+                            <a  href="../html/ayuda-social.html"
+                                class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                                role="button"
+                                ><i class="bi bi-info-square-fill"></i> Ayuda social</a>
+
+                            <a  href="../html/documentos.html"
+                                class="btn botonUniversalDos  btn-floating m-1 textoDeBotones"
+                                role="button"
+                                ><i class="bi bi-archive-fill"></i> Documentos</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de titulo de pagina alcaldia-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de Consejo Municipal-->
+    <!-- *********************************** -->
+
+    <main class="container" id="consejoMunicipal">
+        <section class="row">
+            <div class="col-12 mt-5">
+                <div class="mb-5 border-bottom pb-5">
+                    <h2 class="tituloDeServicios text-center">Consejo Municipal Quepos</h2>
+
+                <p class="fs-4 mt-5 fw-bold text-danger">
+                    Periodo 2020-2024
+                </p>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta consequuntur, quos iure, assumenda fugit atque dolores quis pariatur magni, voluptate laborum molestiae dignissimos at. Voluptatem et nesciunt quia molestias corporis.
+                    Quod similique voluptatum iusto est vero culpa libero error sunt veniam saepe, facilis doloremque voluptatibus voluptate fugiat, necessitatibus inventore adipisci rem dicta accusantium magnam molestias tempora natus? Pariatur, accusantium eius?
+                    Eos vero explicabo cumque ipsa saepe? Quis fugit esse laborum voluptates! Animi at beatae corporis sequi commodi. Exercitationem, adipisci! Alias eos molestiae, voluptates dignissimos hic quidem tenetur non aperiam ratione?
+                </p>
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ab officiis quis facilis hic reprehenderit, incidunt odit consequatur placeat unde nulla ut corporis velit repudiandae numquam quas dolor, eligendi modi.
+                    Similique necessitatibus, quis inventore quasi unde facilis itaque libero harum eligendi magnam accusantium quos nobis autem impedit laboriosam laborum voluptas quia exercitationem corrupti hic voluptatum voluptates debitis? Deserunt, nesciunt quae.
+                </p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de Consejo Municipal-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de regidores propietarios-->
+    <!-- *********************************** -->
+
+    
+    <section class="productos" id="regidoresPropietarios">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <h3 class="tituloDeServicios">Regidores propietarios</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">HUGO ARIAS AZOFEIFA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 602310525</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">NIRIA ROSA FONSECA FALLAS</h4>
+                            <p><span class="fw-bold">Cédula:</span> 105860159</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">RIGOBERTO LEON MORA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 601170301</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2 offset-lg-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">YANSSI PATRICIA RODRIGUEZ BRENES</h4>
+                            <p><span class="fw-bold">Cédula:</span> 603130181</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">KENNETH MAURICIO PEREZ VARGAS</h4>
+                            <p><span class="fw-bold">Cédula:</span> 205550399</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de regidores propietarios-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de REGIDORes SUPLENTEs-->
+    <!-- *********************************** -->
+
+    
+    <section class="productos" id="regidoresSuplentes">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <h3 class="tituloDeServicios">Regidores suplentes</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">MARIA ISABEL SIBAJA ARIAS</h4>
+                            <p><span class="fw-bold">Cédula:</span> 105460935</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">JOSE RAFAEL LEON MORA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 601310009</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">ELISA MADRIGAL ORTIZ</h4>
+                            <p><span class="fw-bold">Cédula:</span> 603050870</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2 offset-lg-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">STIVEN ULISES MENDEZ BARBOZA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 604040994</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">KEVIN GANNON VARGAS</h4>
+                            <p><span class="fw-bold">Cédula:</span> 114860698</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de REGIDORes SUPLENTEs-->
+    <!-- *********************************** -->
+
+
+        <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de sindicos-->
+    <!-- *********************************** -->
+
+    
+    <section class="productos" id="sindicosPropietarios">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <h3 class="tituloDeServicios">Síndicos propietarios</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">DIXON ESPINOZA CORDERO</h4>
+                            <p><span class="fw-bold">Cédula:</span> 603560826</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">JENNY ROMAN CECILIANO</h4>
+                            <p><span class="fw-bold">Cédula:</span> 602730194</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">ALLEN RODOLFO JIMENEZ ZAMORA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 110450024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de sindicos-->
+    <!-- *********************************** -->
+
+
+            <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de sindicos suplentes-->
+    <!-- *********************************** -->
+
+    
+    <section class="productos" id="sindicosSuplentes">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <h3 class="tituloDeServicios">Síndicos sumplentes</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-2 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">DIANA CANALES LARA</h4>
+                            <p><span class="fw-bold">Cédula:</span> 603070896</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow p-2 h-100">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/img/profile-img-muni.png" class="img-fluid" style="height: 100px;" alt="Foto de integrante de consejo">
+
+                            <h4 class="">GUILLERMO DIAZ GOMEZ</h4>
+                            <p><span class="fw-bold">Cédula:</span> 603690239</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de sindicos suplentes-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+    <section class="productos bg-light padingUniversal margingTopUniversal" id="mas-comprado">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-2 mb-2 offset-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/cruz-roja.svg" class="img-fluid" style="height: 50px;" alt="Logo de cruz roja">
+
+                            <p class="card-title">Cruz Roja Quepos</p>
+                            <p class="card-subtitle"><a href="" class="textoNumeros">2582-9090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia.svg" class="img-fluid" style="height: 50px;" alt="Logo Fuerza pública">
+
+                            <p class="card-title">Fuerza Pública</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-6020</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/bomberos.svg" class="img-fluid" style="height: 50px;" alt="Logo bomberos">
+
+                            <p class="card-title">Bomberos Quepos</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-4090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia-muni.svg" class="img-fluid" style="height: 50px;" alt="Logo policía">
+
+                            <p class="card-title">Policía Municipal</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-3030</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza el footer-->
+    <!-- *********************************** -->
+
+    <footer
+    class="text-center text-lg-start text-white margingTopUniversal"
+    style="background-color: #f2a86b"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+    <!--Grid row-->
+    <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+            Municipalidad de Quepos
+        </h6>
+        <p>
+            En la Municipalidad de Quepos nos cmoprometemos a proporcionar servicios públicos de calidad, promover el desarrollo sostenible y mejorar la calidad de vida de nuestra comunidad local a través de la colaboración y el compromiso con nuestros ciudadanos y partes interesadas
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Municipalidad</h6>
+        <p>
+            <a class="text-white" href="../index.html">Inicio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/alcaldia.html">Alcaldía</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/canton.html">Cantón</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/servicios.html">Servicios</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/ambiente.html">Ambiente</a>
+        </p>
+        <p>
+            <a class="text-white" href="../solicitud-de-visado.html">Solicitud de visado</a>
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+        Links útiles
+        </h6>
+        <p>
+            <a class="text-white" href="../html/documentos.html">Documentos</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/noticias.html">Noticias</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/galeria.html">Galería</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/mapa-de-sitio.html">Mapa de sitio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/politicas-de-uso.html">Políticas de uso</a>
+        </p>
+
+        <p>
+            <a class="text-white" href="../html/telefonos-de-interes.html">Teléfonos de interés</a>
+        </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+        <p><i class="fas fa-home mr-3"></i> Pumtarenas, Costa Rica</p>
+        <p><i class="fas fa-envelope mr-3"></i> munidequeposinfo@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> 87565849</p>
+    </div>
+    <!-- Grid column -->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-5 text-center text-md-start">
+        <!-- Copyright -->
+        <div class="p-3">
+        © 2023 Copyright:
+        <a class="text-white" href="#"
+            >Muni de Queposs</a
+            >
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <div class="col-md-3 col-lg-3">
+        <!-- logo -->
+        <div class="p-3">
+            <a style="width: 100px" href="../index.html"><img src="../multimedia/icon/logo-blanco-muni-01.svg" alt="Logo muni"></a>
+        </div>
+        <!-- logo -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Twitter -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Instagram -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+    <!-- Grid column -->
+    </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina el footer-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- todo AQUI EL BOTON DE SCROLLTOP-->
+    <!-- *********************************** -->
+
+    <a href="#" class="totop">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <!-- ====================AQUI VA ES JS========================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+
+    <script src="../js/muni.js"></script>
+
+</body>
+
+</html>

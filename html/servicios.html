@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de la seccion Servicios de Quepos">
+    <meta name="keywords" content="tramites, informacion, comunidad, municipalidad, seguridad, impuestos, recivos">
+    <meta name="auror" content="Anthony arce solis">
+    <meta name="owner" content="Municipalidad de Quepos">
+
+    <meta property="og:title" content="Servicios | Costa Rica">
+    <meta property="og:description" content="Página de la seccion Servicios de Quepos">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="../multimedia/icon/favicon-muni.svg" type="image/x-icon">
+    
+    <title>Servicios | Costa Rica</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos-muni.css">
+
+    <!-- icinos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+</head>
+
+<body class="loaded" data-bs-theme="light">
+
+    <!-- *********************************** -->
+    <!-- Aqui va el menu-->
+    <!-- *********************************** -->
+
+    <nav  class="navbar navbar-expand-lg sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" style="width: 200px" href="../index.html"><img src="../multimedia/icon/logo-pagina-muni.svg" alt="Logo muni"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gobierno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/alcaldia.html">Alcaldía</a></li>
+                            <li><a class="dropdown-item" href="../html/consejo-municipal.html">Consejo Municipal</a></li>
+                            <li><a class="dropdown-item" href="../html/participacion-ciudadana.html">Participación ciudadana</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ciudad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/canton.html">Cantón</a></li>
+                            <li><a class="dropdown-item" href="../html/emprendedores.html">Emprendedores</a></li>
+                            <li><a class="dropdown-item" href="../html/comision-de-emergencias.html">Comisión de emergencias</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/ambiente.html">Ambiente</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Trámites
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/solicitud-de-visado.html">Solicitud de visado</a></li>
+                            <li><a class="dropdown-item" href="../html/apc-pagos-en-linea.html">APC y Pagos en línea</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex padding" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn me-2 px-2" type="submit"><i class="bi bi-search "></i></button>
+                    
+                </form>
+
+                <div class="d-flex align-items-center padding">
+                    <!-- <button type="button" class="btn botonesVerdes me-2">
+                        <i class="bi bi-whatsapp text-white"></i>
+                    </button> -->
+                    <a href="../html/contacto.html" class="btn botonesRojos me-2 text-white">
+                        Contactar
+                    </a>
+                    <a onclick="temaOscuro()" class="btn" role="button"><i id="dl-icon" class="bi bi-moon-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *********************************** -->
+    <!-- Aqui Termina el menu-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <hr>
+    
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- *********************************** -->
+    <!-- Aqui comienzan las migas de pan-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui cmomienza la seccion de titulo de pagina servicios->
+    <!-- *********************************** -->
+
+    <section class="fondosTituloPag">
+        <div class="container py-5">
+
+            <div class="row come-in">
+                <div class="col-12 col-lg-6 offset-lg-3 text-center">
+                    <h1 class="tituloAlcaldia">Servicios</h1>
+                </div>
+            </div>
+
+            <div class="p-3 pt-0">
+                <div class="row come-in d-flex align-items-center">
+                    <div class="col-md-6 offset-md-3 col-lg-6 ml-lg-0 text-center">
+
+                        <a  href="../html/galeria.html"
+                            class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                            role="button"
+                        ><i class="bi bi-camera-fill"></i> Galería</a>
+
+                        <a  href="../html/ayuda-social.html"
+                            class="btn botonUniversalDos btn-floating m-1 textoDeBotones"
+                            role="button"
+                            ><i class="bi bi-info-square-fill"></i> Ayuda social</a>
+
+                        <a  href="../html/documentos.html"
+                            class="btn botonUniversalDos  btn-floating m-1 textoDeBotones"
+                            role="button"
+                            ><i class="bi bi-archive-fill"></i> Documentos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de titulo de pagina servicios-->
+    <!-- *********************************** -->
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza laintroduccion de la pagina servicios-->
+    <!-- *********************************** -->
+
+    <section class="margingTopUniversal" id="serviciosPublicos">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-12 m-auto">
+                    <h2 class="tituloAcercade">Servicios Públicos</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                            <h3 class="colorSubtitulos">Comprometidos con la calidad de nuestros servicios</h3>
+                            <p class="card-text">
+                                La Municipalidad de Quepos tiene como una de sus funciones principales la prestación de servicios públicos. Sin duda, el papel de la municipalidad en la prestación de servicios públicos es de gran relevancia debido a la proximidad que tienen con la población, lo que favorece la identificación de necesidades y su correcta atención.
+                            </p>
+
+                            <p class="card-text"> 
+                                Los servicios públicos incluyen el conjunto de acciones positivas brindadas, directa o indirectamente, con el propósito de mejorar las condiciones socio-económicas y de lograr un mayor nivel de bienestar social.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6">
+                    <div class="border-0 card bg-transparent">
+                        <img src="../multimedia/img/foto-para-seccion-servicios.png" alt="Foto de Muni de quepos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de portafolio con filtros-->
+    <!-- *********************************** -->
+
+    <section class="margingTopUniversal">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="tituloDeServicios">Servicios</h3>
+                    <p>Consulta por tus servicios de manera rápida.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio margingTopUniversal" id="mercadoMuni">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Todos</li>
+                        <li data-filter=".filter-cementerio">cementerio municipal</li>
+                        <li data-filter=".filter-mercado">mercado municipal</li>
+                        <li data-filter=".filter-aseoyvias">Aseo y vias</li>
+                        <li data-filter=".filter-recoleccion">Recolección de Desechos</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row portfolio-container justify-content-center">
+    
+                <div class="col-xl-10">
+                    <div class="row">
+    
+                <!--inicio de card del servicio del mercado municipal -->
+    
+                            <div  class="col-12 portfolio-item filter-mercado">
+    
+                                <div class="card p-2 border-warning">
+                    <div class="card-body ">
+                        <strong class="text-warning d-inline-block mb-2">
+                            Mercado municipal
+                        </strong>
+                        <h3 class="mt-4">Coordinador: Alex Zamora Sanchez</h3>
+                        <ul>
+                            <li><strong>Teléfono:</strong> 2777 83 00 Ext. 149</li>
+                            <li><strong>Horario de Oficina:</strong> Lunes a Jueves de 7:00 a.am a 4:00 p.m, Viernes 7:00 a.m a 3:00 p.m</li>
+                            <li><strong>Correo electrónico:</strong> azamora@muniquepos.go.cr</li>
+                        </ul>
+    
+                        <h4 class="text-center mt-5">Funciones principales del Mercado Municipal</h4>
+                        <ul class="mt-5 fs-5">
+                            <li>
+                                1) Aplicar las disposiciones legales contenidas en el <strong>Reglamento de Mercado,</strong> mediante el mantenimiento actualizado de los controles de los inquilinos del mercado.
+                            </li>
+                            <li>
+                                2) Coordinar con <strong>Gestión de Cobros</strong> y Patentes los montos a cobrar por las patentes y derechos, el pago por consumo de agua, luz y otros servicios de los arrendatarios del Mercado Municipal
+                            </li>
+                            <li>
+                                3) Velar por el <strong>mantenimiento preventivo</strong> y correctivo de la infraestructura del mercado.
+                            </li>
+                        </ul>
+    
+                    </div>
+                                </div>
+    
+                            </div>
+    
+                <!--fin de card del servicio del mercado municipal -->
+
+                <!--inicio de card del servicio del cementerio municipal -->
+    
+            <div class="col-12 portfolio-item filter-cementerio">
+    
+                <div class="card p-2 border-primary">
+            <div class="card-body ">
+                <strong class="text-primary d-inline-block mb-2">
+                    Cementerio municipal
+                </strong>
+                <h3 class="mt-4">Coordinador: Alex Zamora Sanchez</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> 2777 83 00 Ext. 149</li>
+                    <li><strong>Horario de Oficina:</strong> Lunes a Jueves de 7:00 a.am a 4:00 p.m, Viernes 7:00 a.m a 3:00 p.m</li>
+                    <li><strong>Correo electrónico:</strong> azamora@muniquepos.go.cr</li>
+                </ul>
+
+                <h3 class="text-center mt-5">Requisitos para adquirir un Derecho de Cementerio</h3>
+                <ul class="mt-5 fs-5">
+                    <li>1) Número de Fosa (preguntar en el cementerio).</li>
+                    <li>2) Fotocopia de cédula de dos personas más que queden como autorizados para cualquier trámite.</li>
+                    <li>3) Si fallece una persona, presentar el certificado de defunción y copia de la cédula.</li>
+                    <li>4) Para <strong> un derecho (2 espacios),</strong> cancela la primera vez ¢24.070, y queda cancelando por año ¢7.680.</li>
+                    <li>5) Para <strong>dos derechos (4 espacios),</strong> cancela la primera vez ¢48.140, y queda cancelando por año ¢15.360.</li>
+                </ul>
+
+                <p class="fst-italic">Para cualquier obra a realizar en la fosa, después de formalizado el contrato, se necesita: Nombre completo, número de cédula, dirección y número de teléfono de la persona que vaya a realizar el trabajo en el cementerio (válido por un mes).</p>
+            </div>
+                </div>
+
+                <div class="card p-2 border-primary mt-4">
+            <div class="card-body ">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Rubros</th>
+                            <th scope="col">Un Derecho (2 espacios)</th>
+                            <th scope="col">Dos Derechos (4 espacios)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Nicho</td>
+                            <td>¢ 3.446.00</td>
+                            <td>¢ 6.892.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Loseta</td>
+                            <td>¢ 1.823.00</td>
+                            <td>¢ 3.646.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Plataforma</td>
+                            <td>¢ 1.922.00</td>
+                            <td>¢ 3.844.00r</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Servicio de Defunción</td>
+                            <td>¢ 9.190.00r</td>
+                            <td>¢ 18.380.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Derecho de Cementerio</td>
+                            <td>¢ 7.689.00</td>
+                            <td>¢ 15.378.00</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th scope="row"></th>
+                            <td><strong>Total</strong></td>
+                            <td><strong>¢ 24.070.00</strong></td>
+                            <td><strong>¢ 48.140.00</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                </div>
+
+            </div>       
+
+            <!--fin de card del servicio del cementerio municipal -->
+
+            <!--inicio de card del servicio de aseo y vias -->
+
+                            <div class="col-12 portfolio-item filter-aseoyvias">
+    
+                                <div class="card p-2 border-success">
+                    <div class="card-body ">
+                        <strong class="text-success d-inline-block mb-2">
+                            Aseo y vías
+                        </strong>
+                        <h3 class="mt-4">UNIDAD DE ASEO DE VÍAS Y SITIOS PÚBLICOS</h3>
+                        <h4>Biólogo Warren Umaña Cascante</h4>
+                        <ul>
+                            <li><strong>Teléfono:</strong>  2777-7744</li>
+                            <li><strong>Horario de Oficina:</strong> Lunes a Jueves de 7:00 a.am a 4:00 p.m, Viernes 7:00 a.m a 3:00 p.m</li>
+                            <li><strong>Correo electrónico:</strong>  wumana@muniquepos.go.cr</li>
+                        </ul>
+
+                        <p>Esta unidad municipal se encarga de dar limpieza a las aceras y cordón y caño de diferentes áreas públicas, igualmente se encarga de dar mantenimiento a zonas verdes y áreas recreativas a cargo de la municipalidad.</p>
+
+                        <p>Igualmente presta colaboración a los diversos departamentos de la municipalidad de acciones como operativos, demoliciones, construcciones, limpiezas de áreas específicas, logística en actividades masivas, campañas de diversa índole, acciones y operativos de emergencia, recolección de residuos sólidos y reciclaje en comunidades alejadas del centro de Quepos, etc.</p>
+
+                        <p>En la actualidad el departamento está integrado por 12 funcionarios destacados en distintas zonas del cantón.</p>
+
+                        <p>Los sitios donde se brinda el servicio de Aseo de Vías y Sitios Públicos corresponden a las comunidades de Boca Vieja, Barrio Los Ángeles, Bario Bella Vista, Barrio Paraíso, Casco Central de Quepos, El INVU, El Tajo, Rancho Grande y Playa Espadilla Norte (Playa Manuel Antonio). Igualmente se hacen intervenciones y limpiezas en diversas zonas de todo el cantón de acuerdo a las necesidades de las comunidades.</p>
+
+                        <p>Además se brinda el mantenimiento y limpieza de las siguientes zonas verdes del cantón a cargo de la municipalidad: Parque de Quepos, Nahomí, Isletas de entrada a Quepos, Parque 1856, Malecón, Zonas de entretenimiento infantil (Playground), Zonas verdes Barrio Bellavista, Zonas Verdes “Quebrada los Padres” y Zonas Verdes Paseo Corrohore.</p>
+                    </div>
+                                </div>
+    
+                            </div>
+
+            <!--fin de card del servicio de aseo y vias -->
+
+            <!--inicio de card del servicio de recoleccion de basura -->
+                            <div class="col-12 portfolio-item filter-recoleccion">
+    
+                                <div class="card p-2 border-danger">
+                    <div class="card-body ">
+                        <strong class="text-danger d-inline-block mb-2">
+                            Recolección de Desechos
+                        </strong>
+                        <h3 class="mt-4">Antecedentes</h3>
+
+                        <p class="mt-4">La Municipalidad de Quepos (antes Aguirre) hasta el año 1995, brindaba el servicio de recolección de residuos sólidos por medio propios (maquinaria y personal) y los depositaba en distintos lugares del cantón sin recibir un mínimo tratamiento, principalmente los residuos eran trasladados hasta el denominado Vertedero de Residuos Sólidos de Anita (VRSA).</p>
+
+                        <p>A partir de diciembre de 2014 y hasta la fecha la Municipalidad contrata al consorcio Tecnoambiente-RABSA-Lumar, el cual brinda el servicio de recolección, transporte y disposición final de residuos sólidos, así como la recolección separada de residuos valorizables y recolección de residuos no tradicionales en el cantón de Quepos.</p>
+
+                        <p>Es importante indicar que la Municipalidad cuenta desde el año 2014 con el Plan Municipal de Gestión Integral de Residuos (PMGIRS), el cual ha permitido establecer los lineamientos y pautas a seguir para mejorar el tratamiento de los residuos sólidos del cantón.</p>
+                    </div>
+                                </div>
+
+                                <div class="card p-2 border-danger mt-4">
+                    <div class="card-body ">
+
+                        <h4>Servicio de recolección de residuos sólidos ordinarios</h4>
+
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Día/ruta</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Lunes (L)</td>
+                                    <td>Quepos Centro, el Tajo (Calle Vieja a Manuel Antonio), Rancho Grande, El INVU, Boca Vieja hasta Maxi Palí, Martec.</td>
+                                    <td>Calle a Manuel Antonio hasta la entrada al Parque, entrada hotel Mariposa, entrada al hotel el Lirio más allá del Súper Blanco, entrada del súper hasta donde Leo López, entrada de la Iglesia Católica, entrada del salón comunal y saliendo por el súper Joseth, entrada Hotel Vista Serena, entrada hotel California, La Zona Americana, La Marina Pez Vela, Tipo H.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Martes (K)</td>
+                                    <td>Quepos Centro, Barrio Los Ángeles, Bella Vista, Paraíso, calle a los Alfaro.</td>
+                                    <td>El plantel del ICE, apartamentos Julio Viales, Lomas de Alvarado, Colinas del Este, entrada Marisquería Jiuberth, Hotel Layla, Bar la Flaca, entrada Los Tucanes, carretera hasta la Esc. Inmaculada, entrada a la escuela Inmaculada, entrada de la Iglesia hasta salir a barrio Las Palmas, barrio Vista Bosque, la calle desde la plaza pasando por la calle de la montañita hasta salir a la costanera, la Pascua, La Laguna, el Estadio, La Inmaculada, barrio CNP, barrio Lomas del Cruce, Carretera a Naranjito hasta casas después del MAG, La Managua, barrio San Martín, y Boca Naranjo, calle de la costanera hacia el cementerio, el Hospital.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Miércoles (M)</td>
+                                    <td>Quepos Centro, Colegio, Maxi Palí y Paquita, Pueblo Real, comunidad de Damas, Proyecto Fátima y sector hasta los límites con el cantón de Parrita./td>
+                                    <td>Calle Manuel Antonio, hasta el Parque, entrada a Villa Teca, entrada hasta Hotel California, Hotel Vista Serena, entrada del Hotel el Lirio hasta más allá del Súper Blanco, entrada del hotel Mariposa hasta Playa Biesanz, entrada de Valle Pura Vida. Muelle, la Marina.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jueves (J)</td>
+                                    <td>Quepos Centro, Barrio Los Ángeles, Bella Vista, Paraíso, calle a los Alfaro.</td>
+                                    <td>El plantel del ICE, apartamentos Julio Viales, Lomas de Alvarado, Colinas del Este, entrada Marisquería Jiuberth, Hotel Layla, Bar la Flaca, entrada Los Tucanes, carretera hasta la Esc. Inmaculada, entrada a la escuela Inmaculada, entrada de la Iglesia hasta salir a barrio Las Palmas, barrio Vista Bosque, la calle desde la plaza pasando por la calle de la montañita hasta salir a la costanera, la Pascua, La Laguna, el Estadio, La Inmaculada, barrio CNP, barrio Lomas del Cruce, Carretera a Naranjito hasta casas después del MAG, La Managua, barrio San Martín, y Boca Naranjo, calle de la costanera hacia el cementerio y el Hospital.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Sábado (S)</td>
+                                    <td>Quepos Centro, Colegio, Maxi Palí y Paquita, Pueblo Real, comunidad de Damas, Proyecto Fátima y sector hasta los límites con el cantón de Parrita</td>
+                                    <td>Calle a Manual Antonio hasta el Parque, entrada al Parador hasta Biesanz, entrada Valle Pura Vida, entrada al Hotel California, entrada del Hotel el Lirio hasta 500 m más allá del Súper Blanco, Hotel Vista Serena entrada calle vieja a Manuel Antonio hasta Villa Teca.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Domingo</td>
+                                    <td colspan="2">Quepos Centro</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="mt-5">NOTAS IMPORTANTES:</h5>
+                        <ul>
+                            <li>● En el sector de Quepos Centro se brinda el servicio todos los días de la semana dos veces al día.</li>
+                            <li>● El servicio se brinda a partir de las 6 de la mañana y hasta concluir la totalidad de las rutas.</li>
+                        </ul>
+                    </div>
+                                </div>
+    
+                            </div>
+            <!--fin de card del servicio de recoleccion de basura -->
+
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section><!-- End Portfolio Section -->
+    
+    
+    
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de portafolio con filtros-->
+    <!-- *********************************** -->
+
+
+
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+    <section class="productos bg-light padingUniversal margingTopUniversalDos" id="mas-comprado">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-2 mb-2 offset-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/cruz-roja.svg" class="img-fluid" style="height: 50px;" alt="Logo cruz roja">
+
+                            <p class="card-title">Cruz Roja Quepos</p>
+                            <p class="card-subtitle"><a href="" class="textoNumeros">2582-9090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia.svg" class="img-fluid" style="height: 50px;" alt="Logo fuerza pública">
+
+                            <p class="card-title">Fuerza Pública</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-6020</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/bomberos.svg" class="img-fluid" style="height: 50px;" alt="Logo bomberos">
+
+                            <p class="card-title">Bomberos Quepos</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-4090</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="../multimedia/icon/policia-muni.svg" class="img-fluid" style="height: 50px;" alt="Logo policía">
+
+                            <p class="card-title">Policía Municipal</p>
+                            <p class="card-subtitle textoNumeros"><a href="" class="textoNumeros">2582-3030</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina la seccion de telefonos de emergencia-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- Aqui comienza el footer-->
+    <!-- *********************************** -->
+
+    <footer
+    class="text-center text-lg-start text-white margingTopUniversal"
+    style="background-color: #f2a86b"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+    <!--Grid row-->
+    <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+            Municipalidad de Quepos
+        </h6>
+        <p>
+            En la Municipalidad de Quepos nos cmoprometemos a proporcionar servicios públicos de calidad, promover el desarrollo sostenible y mejorar la calidad de vida de nuestra comunidad local a través de la colaboración y el compromiso con nuestros ciudadanos y partes interesadas
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Municipalidad</h6>
+        <p>
+            <a class="text-white" href="../index.html">Inicio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/alcaldia.html">Alcaldía</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/canton.html">Cantón</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/servicios.html">Servicios</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/ambiente.html">Ambiente</a>
+        </p>
+        <p>
+            <a class="text-white" href="../solicitud-de-visado.html">Solicitud de visado</a>
+        </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+        Links útiles
+        </h6>
+        <p>
+            <a class="text-white" href="../html/documentos.html">Documentos</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/noticias.html">Noticias</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/galeria.html">Galería</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/mapa-de-sitio.html">Mapa de sitio</a>
+        </p>
+        <p>
+            <a class="text-white" href="../html/politicas-de-uso.html">Políticas de uso</a>
+        </p>
+
+        <p>
+            <a class="text-white" href="../html/telefonos-de-interes.html">Teléfonos de interés</a>
+        </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+        <p><i class="fas fa-home mr-3"></i> Pumtarenas, Costa Rica</p>
+        <p><i class="fas fa-envelope mr-3"></i> munidequeposinfo@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> 87565849</p>
+    </div>
+    <!-- Grid column -->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-5 text-center text-md-start">
+        <!-- Copyright -->
+        <div class="p-3">
+        © 2023 Copyright:
+        <a class="text-white" href="#"
+            >Muni de Queposs</a
+            >
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <div class="col-md-3 col-lg-3">
+        <!-- logo -->
+        <div class="p-3">
+            <a style="width: 100px" href="../index.html"><img src="../multimedia/icon/logo-blanco-muni-01.svg" alt="Logo muni"></a>
+        </div>
+        <!-- logo -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Twitter -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Instagram -->
+            <a  href="#"
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+    <!-- Grid column -->
+    </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+
+    <!-- *********************************** -->
+    <!-- Aqui termina el footer-->
+    <!-- *********************************** -->
+
+
+    <!-- *********************************** -->
+    <!-- todo AQUI EL BOTON DE SCROLLTOP-->
+    <!-- *********************************** -->
+
+    <a href="#" class="totop">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <!-- ====================AQUI VA ES JS========================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="../js/isotope.pkgd.min.js"></script>
+
+    <script src="../js/muni.js"></script>
+
+</body>
+
+</html>
